@@ -1,0 +1,57 @@
+$, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #82ccdd;
+  height: 100vh;
+  font-family: Courier, monospace;
+}
+
+header.page {
+  text-align: center;
+  margin: 10px;
+}
+
+footer.foot-page {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.galerie {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 1300px;
+  margin: 70px auto 0;
+  padding: 7px;
+}
+
+.item {
+  width: 300px;
+  height: 375px;
+  margin: 5px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.galerie .item:hover img{
+  transform: scale(1.5);
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease;
+}
+
+.insta {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
